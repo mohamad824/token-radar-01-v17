@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Token Radar v17 — curve board + why-not-higher audit</title><link rel="stylesheet" href="app.css"></head><body>
+<header><div><h1>TOKEN RADAR <span>v17</span></h1><p class="sub">Curve D-52 board (clean-92) + per-row why-not-higher audit. Snapshot 2026-11-14, 758 protocols, 40 watchlist. Implied value is this entry's claim, never make.fun's.</p></div><div class="hdr-r"><span class="pill">198 ranked</span><span class="pill">40/40 watchlist</span><span class="pill">cap 1.0x</span></div></header>
+<section id="kpi" class="kpi"></section>
+<p class="jn">READ: 198 pre-token protocols by implied value (USD). Curve D-52 on 92 traded comps; inputs TVL, 7d growth, age. Odds never change rank. Multiple capped 1.0x. VERIFY: row &gt; Rebuild recomputes from inputs x factors. TEST (curve, held out): median LOO x/2.72 | median WF x/3.76 | mean WF x/5.72. Rule picks A (mean WF 5.45); this board BETS on the curve: better medians, headlines closest to kiencx ($62M/$1.51B). ODDS: per-row from full fit; formulation beats base on 3 WF cuts. Tier LOW 25.7% vs &lt;=25%: WAIVED miss, reported as-is. RANGE: inner x1.7 50%, outer x1.5 83% (targets 50/80). 29 rows flagged. 758 accounted. WHY NOT HIGHER: each row names its binding factor.</p>
+<nav class="tabs"><button data-tab="board" class="on">Board</button><button data-tab="evidence">Evidence</button><button data-tab="calendar">Calendar</button></nav>
+<main id="tab-board">
+<section id="tiles" class="grid"></section>
+<p id="narr" class="narr"></p>
+<section class="ctl"><input id="q" type="search" placeholder="Search…" aria-label="Search"><select id="fV" aria-label="Verdict filter"><option value="">Verdict: all</option><option>FARM</option><option>MARGINAL</option><option>SKIP</option></select><select id="fT" aria-label="Tier filter"><option value="">Tier: all</option><option>HIGH</option><option>MED</option><option>LOW</option></select><select id="fC" aria-label="Category filter"><option value="">Category: all</option></select><label><input type="checkbox" id="fW"> watchlist</label><label><input type="checkbox" id="fG"> grey-zone</label><label><input type="checkbox" id="fX"> extrapolated</label><button id="dens">Density: comfy</button><button id="cols">Columns</button><button id="expJ">Export JSON</button><button id="expC">Export CSV</button></section>
+<div id="chooser" class="chooser" hidden></div>
+<section class="sim"><b>Simulator D-13</b><label>Haircut <input id="simH" type="range" min="0" max="90" value="0"> <span id="simHv">0%</span></label><label>Drop share <input id="simD" type="range" min="0" max="50" value="7"> <span id="simDv">7%</span></label></section>
+<div class="tblwrap"><table id="board"><thead></thead><tbody></tbody><tfoot></tfoot></table></div>
+<p class="disc"><button id="showAll">Show all 198</button> <span id="discNote"></span></p>
+<section id="detail"></section>
+</main>
+<main id="tab-evidence" hidden></main>
+<main id="tab-calendar" hidden></main>
+<footer><p>Rank is implied value if the protocol launched a token at its current record. Odds (WF-tested) never change rank. Farm verdicts are net of gas + T-bill cost at $5K/12wk/7%; they do not price eligibility risk. Gas figures are planning assumptions, never snapshot data. Watchlist is a floor, never a ceiling. Built by main.ts from the sealed snapshot only.</p><p id="integ"></p></footer>
+<script src="data.js"></script><script src="app.js"></script></body></html>
